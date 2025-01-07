@@ -518,7 +518,7 @@ footer.tar{
 }
 .login-container form{
     width: 90%;
-    height: 60%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -865,6 +865,11 @@ form a{
         opacity: .7;
         user-select: none;
     }
+    header.tar{
+        filter: blur(10px);
+        opacity: .7;
+        user-select: none;
+    }
     .sect-top{
         height: 400px;
     }
@@ -986,7 +991,7 @@ form a{
     }
     .login-container{
         width: 90%;
-        height: 80%;
+        height: 552px;
         top: 45%;
     }
     .login-container h1{
