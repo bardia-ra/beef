@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروتئینی</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="side-nav">
+        <div class="side-top">
+            <div class="side-close">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <input type="search" placeholder="جستجو کنید" id="search">
+            <input type="submit" value="" id="search-btn">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="side-bottom">
+            <ul class="side-nav-item-parent">
+                <li class="side-nav-item"><a href="">خانه</a></li>
+            </ul>
+            <ul class="side-nav-item-parent">
+                <li class="side-nav-item"><a href="">محصولات</a></li>
+            </ul>
+            <ul class="side-nav-item-parent">
+                <li class="side-nav-item"><a href="">ارتباط با ما</a></li>
+            </ul>
+            <ul class="side-nav-item-parent">
+                <li class="side-nav-item"><a href="">تماس با ما</a></li>
+            </ul>
+            <ul class="side-nav-item-parent">
+                <li class="side-nav-item"><a href="">سبدخرید</a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <ul>
+            <li>
+                <h1 class="nav-logo">فروشگاه پروتینی</h1>
+            </li>
+        </ul>
+    </header>
+    <div class="nav-mobile">
+        <li class="nav-mobile-item" id="nav-login">
+            <i  class=" nav-login fa-regular fa-user" style="color: #ffffff;font-size: 22px;"></i>
+        </li>
+        <li class="nav-mobile-item" id="nav-cart">
+            <div id="circle"><span id="cart-numb">0</span></div>
+            <i class="nav-cart fa-brands fa-opencart" style="color: #ffffff;font-size: 22px;"></i>
+        </li>
+        <li class="nav-mobile-item" id="nav-bag">
+            <i class=" nav-bag fa-solid fa-bag-shopping"></i>
+        </li>
+        <li class="nav-mobile-item" id="nav-bar">
+            <i class=" nav-bar fa-solid fa-bars"></i>
+        </li>
+    </div>
+    <div class="login-container">
+        <div class="close-login">&times;</div>
+        <h1>وارد حساب خود شوید</h1>
+        <form action="login">
+            <div class="user"><input type="text" placeholder="نام کاربری خود را وارد کنید" id="username"></div>
+            <div class="pass">
+                <img
+                id="hide-pass"
+                src="img/show.png" 
+                alt="">
+                <input type="password" placeholder="رمز عبور خود را وارد کنید" id="password"></div>
+            <div class="check-form">
+                <div class="checkbox-wrapper-19">
+                    <input type="checkbox" id="checkbox-time1" />
+                    <label for="checkbox-time1" class="check-box">
+                </div>
+                <p>قوانین را خوانده ام و ان را می پذیرم</p>
+            </div>
+            <button type="button">ورود به حساب</button>
+            <a href="">ساخت حساب جدید</a>
+        </form>
+        <div class="login-bottom">
+            <p>ورود با اکانت های فضای مجازی</p>
+            <div class="socials-parent">
+                <button class="social-icon" style="font-size: 20px;"><i class="fa-brands fa-instagram"></i></button>
+                <button class="social-icon"><i class="fa-brands fa-google"></i></button>
+                <button class="social-icon"><i class="fa-brands fa-twitter"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-container">
+        <div class="cart-top">
+            
+            <div class="cart-top-center">
+                <h1>سبد خرید شما (<span id="cart-item-numb">0</span>)</h1>
+            </div>
+            <div class="cart-close">
+                &times;
+            </div>
+        </div>
+        <div class="cart-mid">
+            <div class="cart-md-main">
+                <h1>شما هیچ محصولی در سبد خرید خود ندارید.</h1>
+            </div>
+        </div>
+        <div class="cart-bottom">
+            <div class="cart-bt-top">
+                <div class="cart-bt-left">
+                    <p>مجموع</p>
+                </div>
+                <div class="cart-bt-right">
+                    <p id="price-sum">0.00 <span>تومان</span></p>
+                </div>
+                
+            </div>
+            <div class="cart-bt-bottom">
+                <button type="button" id="cart-btn">به پرداخت ادامه دهید</button>
+                <p><i class="fa-solid fa-gift"></i> به عنوان هدیه ارسال کنید</p>
+            </div>
+        </div>
+    </div>
+    <div class="product-select-parent">
+        <div class="select-card">
+            <img src="img/shop-chick.webp" alt="">
+            <h1>گوشت مرغ</h1>
+        </div>
+        <div class="select-card">
+            <img src="img/shop-market.jpg" alt="">
+            <h1>فراورده های گوشتی</h1>
+        </div>
+        <div class="select-card">
+            <img src="img/shop-pork.jpg" alt="">
+            <h1>گوشت گوسفند</h1>
+        </div>
+        <div class="select-card">
+            <img src="img/shop-beef.jpg" alt="">
+            <h1>گوشت گاو</h1>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li id="nav-login">
+                <i  class=" nav-login fa-regular fa-user" style="color: #ffffff;font-size: 22px;"></i>
+            </li>
+            <li id="nav-cart">
+                <div id="circle"><span id="cart-numb">0</span></div>
+                <i class="nav-cart fa-brands fa-opencart" style="color: #ffffff;font-size: 22px;"></i>
+            </li>
+        </ul>
+        <ul>
+            <h1 class="nav-logo">فروشگاه پروتینی</h1>
+        </ul>
+        <ul class="nav-item-parent">
+            <li>
+                <span class="nav-item-border">
+                    <a href="" class="nav-item">خانه</a>
+                </span>
+            </li>
+            <li>
+                <span class="nav-item-border" id="product-nav">
+                    <a href="" class="nav-item" >محصولات</a>
+                </span>
+            </li>
+            <li>
+                <span class="nav-item-border">
+                    <a href="" class="nav-item">ارتباط یا ما</a>
+                </span>
+            </li>
+            <li>
+                <span class="nav-item-border">
+                    <a href="" class="nav-item">جستجو</a>
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="sect-top">
+            <img src="img/all-meat.webp" alt="">
+            <h1>گوشت تازه و با کیفیت</h1>
+            <div id="line" class="text-top">
+                <p>بدون آنتی بیوتیک</p>
+                <p>بدون هورمون</p>
+            </div>
+            <button type="button" id="prod-btn">مشاهده محصولات</button>
+        </section>
+        <section class="category-parent">
+            <div class="category-card">
+                <img src="img/pork-2.webp" alt="">
+                <h1>گوشت گوسفند</h1>
+            </div>
+            <div class="category-card">
+                <img src="img/shop-chick.webp" alt="">
+                <h1>گوشت مرغ</h1>
+            </div>
+            <div class="category-card">
+                <img src="img/shop-beef.jpg" alt="">
+                <h1>گوشت گاو</h1>
+            </div>
+            <div class="category-card">
+                <img src="img/shop-market.jpg" alt="">
+                <h1>فراورده های گوشتی</h1>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-right">
+            <div class="footer-card footer-1">
+                <h1>راه های ارتباطی<i class="plus plus-1 fa-solid fa-plus"></i><i class="minus minus-1 fa-solid fa-minus"></i></h1>
+                <div class="footer-menu footer-menu-1">
+                    <a href="">تماس با ما</a>
+                    <a href="">سوالات متداوم</a>
+                    <a href="">ادرس</a>
+                </div>
+            </div>
+            <div class="footer-card footer-2">
+                <h1>فروشگاه<i class="plus plus-2 fa-solid fa-plus"></i><i class="minus minus-2 fa-solid fa-minus"></i></h1>
+                <div class="footer-menu footer-menu-2">
+                    <a href="">گوشت گاو</a>
+                    <a href="">گوشت گوساله</a>
+                    <a href="">مرغ</a>
+                    <a href="">ماهی</a>
+                    <a href="">بسته ها</a>
+                </div>
+            </div>
+            <div class="footer-card footer-3">
+                <h1>شرکت<i class="plus plus-3 fa-solid fa-plus"></i><i class="minus minus-3 fa-solid fa-minus"></i></h1>
+                <div class="footer-menu footer-menu-3">
+                    <a href="">فرآیند ما</a>
+                    <a href="">عمده فروشی</a>
+                    <a href="">مکان های خواربار فروشی</a>
+                    <a href="">وابسته ها</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-left">
+            <div class="footer-top">
+                <div class="footer-top-right">
+                    <h2>شماره تماس : 02188264050</h2>
+                </div>
+                <div class="footer-top-left">
+                    <h2>ادرس : تهران &nbsp; گیشا</h2>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bt-top">
+                    <div class="footer-bt-right">
+                        <i class="fa-brands fa-instagram" style="font-size: 30px; color: var(--text-color);"></i>
+                        <i class="fa-brands fa-facebook" style="font-size: 30px; color: var(--text-color);"></i>
+                        <i class="fa-brands fa-twitter" style="font-size: 30px; color: var(--text-color);"></i>
+                    </div>
+                    <div class="footer-bt-left">
+                        <h1>محل اینماد</h1>
+                    </div>
+                </div>
+                <div class="footer-bt-bottom">
+                    <p>© 2025 بردیا رسولی | شرایط استفاده | سیاست حفظ حریم خصوصی</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assest/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
