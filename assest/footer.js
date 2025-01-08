@@ -1,0 +1,15 @@
+document.querySelector('.footer-1').addEventListener('click',()=>{
+    document.querySelector('.plus-1').classList.toggle('active');
+    document.querySelector('.minus-1').classList.toggle('active');
+    document.querySelector('.footer-menu-1').classList.toggle('active');
+})
+document.querySelector('.footer-2').addEventListener('click',()=>{
+    document.querySelector('.plus-2').classList.toggle('active');
+    document.querySelector('.minus-2').classList.toggle('active');
+    document.querySelector('.footer-menu-2').classList.toggle('active');
+})
+document.querySelector('.footer-3').addEventListener('click',()=>{
+    document.querySelector('.plus-3').classList.toggle('active');
+    document.querySelector('.minus-3').classList.toggle('active');
+    document.querySelector('.footer-menu-3').classList.toggle('active');
+})

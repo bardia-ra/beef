@@ -1,0 +1,18 @@
+@font-face{
+    font-family: vazir;
+    src: url(../font/6\ yekan\ boom\ plus\ \(Tarfand3.com\).TTF);
+}
+:root{
+    --back-color:#434343;
+    --sect-color:#2d2d2d;
+    --text-color:#f1f1f1;
+    --secondary-color:#4ECDC4;
+    --text-shadow:1px 1px 2px rgba(0, 0, 0, .7);
+    --dark-text: #9f9f9f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vazir;
+}

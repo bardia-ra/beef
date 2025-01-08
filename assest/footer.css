@@ -1,0 +1,224 @@
+@font-face{
+    font-family: vazir;
+    src: url(../font/6\ yekan\ boom\ plus\ \(Tarfand3.com\).TTF);
+}
+:root{
+    --back-color:#434343;
+    --sect-color:#2d2d2d;
+    --text-color:#f1f1f1;
+    --secondary-color:#4ECDC4;
+    --text-shadow:1px 1px 2px rgba(0, 0, 0, .7);
+    --dark-text: #9f9f9f;
+}
+body{
+    background-color: var(--back-color) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: var(--sect-color);
+    margin-top: 200px;
+}
+footer.blur{
+    filter: blur(10px);
+    opacity: .7;
+    user-select: none;
+}
+footer.tar{
+    filter: blur(10px);
+    opacity: .7;
+    user-select: none;
+}
+
+.footer-right{
+    border-left: 1px solid #c1c1c1;
+    display: flex;
+    width: 60%;
+}
+.footer-card{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 15px;
+}
+.footer-card h1{
+    font-size: 40px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.footer-card a{
+    text-decoration: none;
+    color: var(--dark-text);
+    /* margin-top: 10px; */
+    font-size: 18px;
+    transition: all .4s;
+}
+.footer-card a:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.footer-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-bottom{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-bt-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    color: var(--text-color);
+}
+.footer-bt-top{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+.footer-bt-right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.footer-bt-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: var(--text-color);
+}
+.footer-top{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.footer-top-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: var(--text-color);
+}
+.footer-top-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: var(--text-color);
+}
+  .plus{
+    display: none;
+  }
+  .minus{
+    display: none;
+  }
+@media(max-width:768px){
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 0 0 100px 0;
+    }
+    .footer-right{
+        border: none;
+        border-bottom: 1px solid var(--dark-text);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 10px 0;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .footer-menu-3{
+        display: none;
+    }
+    .footer-menu-3.active{
+        display: flex;
+    }
+    .footer-menu-2{
+        display: none;
+    }
+    .footer-menu-2.active{
+        display: flex;
+    }
+    .footer-menu-1{
+        display: none;
+    }
+    .footer-menu-1.active{
+        display: flex;
+    }
+    .footer-card{
+        height: auto;
+        padding: 20px 0 10px 0;
+    }
+    .footer-card h1{
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all .4s;
+    }
+    .footer-card h1:hover{
+        color: var(--secondary-color);
+    }
+    .plus{
+        display: block;
+    }
+    .minus-3.active{
+        display: block;
+    }
+    .plus-3.active{
+        display: none;
+    }
+    .minus-2.active{
+        display: block;
+    }
+    .plus-2.active{
+        display: none;
+    }
+    .minus-1.active{
+        display: block;
+    }
+    .plus-1.active{
+        display: none;
+    }
+    .footer-top-right h2{
+        font-size: 18px !important;
+        padding: 20px 0;
+    }
+    .footer-top-left h2{
+        font-size: 18px !important;
+        padding: 20px 0;
+    }
+    .footer-bottom{
+        height: auto;
+    }
+    .footer-bt-top{
+        height: 130px;
+    }
+    
+    
+  }
