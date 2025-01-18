@@ -40,17 +40,20 @@
     <header>
         <ul>
             <li>
-                <h1 class="nav-logo">فروشگاه پروتینی</h1>
+                <a href="../index.html">
+
+                    <h1 class="nav-logo">فروشگاه پروتینی</h1>
+                </a>
             </li>
         </ul>
     </header>
     <div class="nav-mobile">
         <li class="nav-mobile-item" id="nav-login-mobile">
-            <i  class=" nav-login fa-regular fa-user" style="color: #ffffff;font-size: 22px;"></i>
+            <i  class=" nav-login fa-regular fa-user" style="font-size: 22px;"></i>
         </li>
         <li class="nav-mobile-item" id="nav-cart-mobile">
             <div id="circle"><span id="cart-numb">0</span></div>
-            <i class="nav-cart fa-brands fa-opencart" style="color: #ffffff;font-size: 22px;"></i>
+            <i class="nav-cart fa-brands fa-opencart" style="font-size: 22px;"></i>
         </li>
         <li class="nav-mobile-item" id="nav-bag">
             <i class=" nav-bag fa-solid fa-bag-shopping"></i>
@@ -93,7 +96,7 @@
         <div class="cart-top-mobile">
             
             <div class="cart-top-center-mobile">
-                <h1>سبد خرید شما (<span id="cart-item-numb-mobile">0</span>)</h1>
+                <h1>سبد خرید شما (<span class="cart-count">0</span>)</h1>
             </div>
             <div class="cart-close-mobile">
                 &times;
@@ -154,14 +157,14 @@
         <div class="cart-top">
             
             <div class="cart-top-center">
-                <h1>سبد خرید شما (<span id="cart-item-numb">0</span>)</h1>
+                <h1>سبد خرید شما (<span id="cart-count-2">0</span>)</h1>
             </div>
             <div class="cart-close">
                 &times;
             </div>
         </div>
         <div class="cart-mid">
-            <div class="cart-md-main">
+            <div class="cart-md-main" id="cart-items">
                 <h1>شما هیچ محصولی در سبد خرید خود ندارید.</h1>
             </div>
         </div>
@@ -171,7 +174,7 @@
                     <p>مجموع</p>
                 </div>
                 <div class="cart-bt-right">
-                    <p id="price-sum">0.00 <span>تومان</span></p>
+                    <p id="total-price">0.00 <span>تومان</span></p>
                 </div>
                 
             </div>
@@ -200,22 +203,10 @@
         </div>
     </div>
     <nav>
-        <ul>
-            <li id="nav-login-1">
-                <i  class=" nav-login fa-regular fa-user" style="color: #ffffff;font-size: 22px;"></i>
-            </li>
-            <li id="nav-cart-1">
-                <div id="circle"><span id="cart-numb">0</span></div>
-                <i class="nav-cart fa-brands fa-opencart" style="color: #ffffff;font-size: 22px;"></i>
-            </li>
-        </ul>
-        <ul>
-            <h1 class="nav-logo">فروشگاه پروتینی</h1>
-        </ul>
         <ul class="nav-item-parent">
             <li>
-                <span class="nav-item-border">
-                    <a href="" class="nav-item">خانه</a>
+                <span class="nav-item-border" id="home-nav">
+                    <a href="../index.html" class="nav-item">خانه</a>
                 </span>
             </li>
             <li>
@@ -234,9 +225,218 @@
                 </span>
             </li>
         </ul>
+        <ul>
+            <a href="../index.html">
+                <h1 class="nav-logo">فروشگاه پروتینی</h1>
+            </a>
+        </ul>
+        <ul>
+            <li id="nav-cart-1">
+                <div id="circle"><span id="cart-count">0</span></div>
+                <i class="nav-cart fa-brands fa-opencart" style="font-size: 22px;"></i>
+            </li>
+            <li id="nav-login-1">
+                <i  class=" nav-login fa-regular fa-user" style="font-size: 22px;"></i>
+            </li>
+            
+        </ul>
+        
     </nav>
     <main>
-        
+        <div class="filter-parent">
+            
+            <div class="filter-left">
+                <p id="filter">فیلتر محصولات <i class="fa-solid fa-sliders"></i></p>
+                <div class="filter-menu">
+                    <div class="menu-right">
+                        <div class="menu-top">
+                            <p>محصولات تخفیف دار</p>
+                            <div class="checkbox-wrapper-19">
+                                <input type="checkbox" id="checkbox-off" />
+                                <label for="checkbox-off" class="check-box">
+                            </div>
+                        </div>
+                        <div class="menu-bottom">
+                            <p>محصولات موجود</p>
+                            <div class="checkbox-wrapper-19">
+                                <input type="checkbox" id="checkbox-on" />
+                                <label for="checkbox-on" class="check-box">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-left">
+                        <h1>نوع گوشت</h1>
+                        <p>گوشت گاو و گوساله</p>
+                        <p>گوشت ماهی و میگو</p>
+                        <p>گوشت مرغ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-right">
+                <a href="">پرفروش ترین</a>
+                <a href="">جدیدترین</a>
+                <a href="">گران ترین</a>
+                <a href="">ارزان ترین</a>
+            </div>
+        </div>
+        <section class="all-parent">
+            <div class="all-top">
+                <img src="../img/sup-img.jpg" alt="">
+                <h1>همه گوشت ها</h1>
+                <p>از گوشت مرغ تا ماهی .از فیله تا سینه همچی پیدا میشه</p>
+            </div>
+            <h1 class="all-title">گوشت مرغ</h1>
+            <div class="all-card-parent">
+                <div class="all-card">
+                        <div class="all-img">
+                            <img src="../img/file.png!sw800" alt="" >
+                        </div>
+                        <div class="all-detail">
+                            <h1>ران مرغ</h1>
+                            <div class="detail-parent">
+                                <p>وزن : نیم کیلو گرم</p>
+                                <p class="price">قیمت :&nbsp;<span class="price">250.000</span>   &nbsp;تومان</p>
+                                <button type="button" id="card-btn">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                </div>
+                <!-- <div class="product">
+                    <h2>محصول ۱</h2>
+                    <img src="../img/ai-generated-minced-meat-steack-butcher-on-a-transparent-background-free-png.webp" alt="محصول ۱" width="100" class="product-image">
+                    <p>نام محصول: <span class="product-name">محصول ۱</span></p>
+                    <p>قیمت: <span class="price">10000</span> تومان</p>
+                    <button onclick="addToCart(this)">افزودن به سبد خرید</button>
+                </div>
+                
+                <div class="product">
+                    <h2>محصول ۲</h2>
+                    <img src="../img/high-quality-realistic-fresh-raw-meat-isolated-on-transparent-background-free-png.webp" alt="محصول ۲" width="100" class="product-image">
+                    <p>نام محصول: <span class="product-name">محصول ۲</span></p>
+                    <p>قیمت: <span class="price">20000</span> تومان</p>
+                    <button onclick="addToCart(this)">افزودن به سبد خرید</button>
+                </div>
+                
+                <div id="cart">
+                    <h2>سبد خرید (<span id="cart-count">0</span>)</h2>
+                    <ul id="cart-items"></ul>
+                    <p>مجموع قیمت: <span id="total-price">0 تومان</span></p>
+                </div> -->
+                <div class="all-card">
+                    <div class="all-img">
+                        <img style="width: 85%;" src="../img/chicken-37-300x234.png" alt="">
+                    </div>
+                    <div class="all-detail">
+                        <h1 >مرغ</h1>
+                        <div class="detail-parent">
+                            <p>یک مرغ کامل</p>
+                            <p class="price">قیمت :&nbsp; <span class="price">750.000</span>  &nbsp;تومان</p>
+                            <button type="button" id="card-btn">افزودن به سبد خرید</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="all-card">
+                <div class="all-img">
+                    <img src="../img/raw-chicken-meat-isolated-on-transparent-background-file-cut-out-ai-generated-png.webp" alt="">
+                </div>
+                <div class="all-detail">
+                    <h1 >فیله مرغ</h1>
+                    <div class="detail-parent">
+                        <p>وزن : نیم کیلو گرم</p>
+                        <p class="price">قیمت :&nbsp; <span class="price">210.000</span>  &nbsp;تومان</p>
+                        <button type="button" id="card-btn">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+        </div>
+            </div>
+            <h1 class="all-title">
+                گوشت گاو و گوساله
+            </h1>
+            <div class="all-card-parent">
+                <div class="all-card" >
+                        <div class="all-img">
+                            <img style="width: 85%;" src="../img/ai-generated-minced-meat-steack-butcher-on-a-transparent-background-free-png.webp" alt="" >
+                        </div>
+                        <div class="all-detail">
+                            <h1 >گوساله چرخ کرده</h1>
+                            <div class="detail-parent">
+                                <p>وزن : نیم کیلو گرم</p>
+                                <p class="price">قیمت :&nbsp; <span class="price">380.000</span>  &nbsp;تومان</p>
+                                <button type="button" id="card-btn">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="all-card" >
+                    <div class="all-img">
+                        <img style="width: 85%;" src="../img/high-quality-realistic-fresh-raw-meat-isolated-on-transparent-background-free-png.webp" alt="" >
+                    </div>
+                    <div class="all-detail">
+                        <h1 >گوشت قرمه ای</h1>
+                        <div class="detail-parent">
+                            <p>وزن : نیم کیلو گرم</p>
+                            <p class="price">قیمت :&nbsp; <span class="price">450.000</span>  &nbsp;تومان</p>
+                            <button type="button" id="card-btn" >افزودن به سبد خرید</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="all-card" >
+                <div class="all-img">
+                    <img  src="../img/New Project (7).png" alt="" >
+                </div>
+                <div class="all-detail">
+                    <h1 >استیک گوساله</h1>
+                    <div class="detail-parent">
+                        <p>وزن : نیم کیلو گرم</p>
+                        <p class="price">قیمت :&nbsp; <span class="price">750.000</span>  &nbsp;تومان</p>
+                        <button type="button" id="card-btn" >افزودن به سبد خرید</button>
+                    </div>
+                </div>
+        </div>
+            </div>
+            <h1 class="all-title">
+                گوشت ماهی و میگو
+            </h1>
+            <div class="all-card-parent">
+                <div class="all-card" >
+                        <div class="all-img">
+                            <img style="width: 65%;" src="../img/pngtree-red-fish-meat-concept-color-png-image_12002992.png" alt="">
+                        </div>
+                        <div class="all-detail">
+                            <h1 >گوشت ماهی</h1>
+                            <div class="detail-parent">
+                                <p>وزن : نیم کیلو گرم</p>
+                                <p class="price">قیمت :&nbsp; <span class="price">250.000</span>  &nbsp;تومان</p>
+                                <button type="button" id="card-btn" >افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                </div>
+            <div class="all-card" >
+                <div class="all-img">
+                    <img style="width: 85%;" src="../img/71-715224_salmon-fish-meat-transparent-background.png" alt="" >
+                </div>
+                <div class="all-detail">
+                    <h1 >فیله سالمون</h1>
+                    <div class="detail-parent">
+                        <p>وزن : نیم کیلو گرم</p>
+                        <p class="price">قیمت :&nbsp; <span class="price">380.000</span>  &nbsp;تومان</p>
+                        <button type="button" id="card-btn">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+        </div>
+        <div class="all-card" >
+            <div class="all-img">
+                <img style="width: 85%;" src="../img/2610613291.png" alt="" >
+            </div>
+            <div class="all-detail">
+                <h1 >میگو سفید</h1>
+                <div class="detail-parent">
+                    <p>وزن : نیم کیلو گرم</p>
+                    <p class="price">قیمت :&nbsp; <span class="price">615.000</span>  &nbsp;تومان</p>
+                    <button type="button" id="card-btn" >افزودن به سبد خرید</button>
+                </div>
+            </div>
+    </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-right">
@@ -295,7 +495,7 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="./all.js"></script> -->
+    <script src="./all.js"></script>
     <script src="../assest/nav.js"></script>
     <script src="../assest/footer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

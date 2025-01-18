@@ -3,10 +3,11 @@
     src: url(../font/6\ yekan\ boom\ plus\ \(Tarfand3.com\).TTF);
 }
 :root{
-    --back-color:#434343;
-    --sect-color:#2d2d2d;
-    --text-color:#f1f1f1;
-    --secondary-color:#4ECDC4;
+    --back-color:#f1f1f1;
+    --sect-color:#fff;
+    --text-color:#2d2d2d;
+    --light-text:#f1f1f1;
+    --secondary-color:#3da09a;
     --text-shadow:1px 1px 2px rgba(0, 0, 0, .7);
     --dark-text: #9f9f9f;
 }
@@ -16,3 +17,272 @@
     box-sizing: border-box;
     font-family: vazir;
 }
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}
+.all-parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all-top{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    flex-direction: column;
+    /* background-color: #4ECDC4; */
+    color: var(--light-text);
+    text-shadow: var(--text-shadow);
+}
+.all-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(.5);
+}
+.all-top h1{
+    font-size: 55px;
+}
+.all-top p{
+    font-size: 20px;
+}
+.all-title{
+    font-size: 55px;
+    color: var(--secondary-color);
+    margin-top: 120px;
+}
+.all-card-parent{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    
+    flex-wrap: wrap;
+}
+.all-card{
+    position: relative;
+    height: 300px;
+    /* background-color: #4ECDC4; */
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.all-img{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+.all-img img{
+    width: 100%;
+    z-index: 1;
+}
+.all-detail{
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+    background-color: var(--sect-color);
+    position: absolute;
+    top: 80px;
+    padding-top: 50px;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 1px 1px 20px #9f9f9f;
+}
+.detail-parent{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    height: 150px;
+    /* gap: 15px; */
+    padding-bottom: 10px;
+}
+.price{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#card-btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--back-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all .4s;
+}
+#card-btn:hover{
+    border: 1px solid var(--secondary-color);
+    background-color: var(--sect-color);
+    color: var(--secondary-color);
+}
+.all-right{
+    width: 80%;
+    right: 400px;
+    position: relative;
+}
+.all-bottom{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.filter-parent{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    color: var(--text-color);
+    height: 70px;
+    align-items: center;
+}
+.filter-right{
+    display: flex;
+    gap: 30px;
+    /* color: var(--text-color); */
+    font-size: 18px;
+}
+.filter-right a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.filter-right a:hover{
+    color: var(--secondary-color);
+    transition: all .4s;
+}
+.filter-left{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.filter-left p{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.filter-left p:hover{
+    color: var(--secondary-color);
+}
+.filter-menu{
+    width: 300px;
+    height: 400px;
+    background-color: var(--sect-color);
+    position: absolute;
+    z-index: 999999;
+    top: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--secondary-color);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    animation: filter-animation .8s;
+    box-shadow: 0px 0px 35px -8px rgba(105,105,105,0.75);
+}
+.filter-menu.active{
+    display: flex;
+}
+@keyframes filter-animation{
+    from{
+        top: -20px;
+    }
+    to{
+        top: 40px;
+    }
+}
+.menu-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding: 0 30px; */
+    gap: 10px;
+    /* padding-top: 55px; */
+}
+.menu-top{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-bottom{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-top p{
+    position: relative;
+    top: -5px;
+}
+.menu-bottom p{
+    position: relative;
+    top: -5px;
+}
+
+  .menu-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu-left h1{
+    font-size: 24px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  .menu-left p{
+    font-size: 16px;
+    transition: all .4s;
+    cursor: pointer;
+  }
+  .menu-left p:hover{
+    color: var(--secondary-color);
+  }
+  #product-nav{
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  #product-nav a{
+    color: var(--secondary-color);
+  }
+  .cart-empty{
+    color: var(--secondary-color);
+  }
+  @media(max-width:768px){
+    main{
+        top: 0;
+        width: 95%;
+    }
+    .filter-right{
+        display: none;
+    }
+    #nav-bag{
+        color: var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+    }
+  }

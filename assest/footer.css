@@ -3,10 +3,11 @@
     src: url(../font/6\ yekan\ boom\ plus\ \(Tarfand3.com\).TTF);
 }
 :root{
-    --back-color:#434343;
-    --sect-color:#2d2d2d;
-    --text-color:#f1f1f1;
-    --secondary-color:#4ECDC4;
+    --back-color:#f1f1f1;
+    --sect-color:#fff;
+    --text-color:#2d2d2d;
+    --light-text:#f1f1f1;
+    --secondary-color:#3da09a;
     --text-shadow:1px 1px 2px rgba(0, 0, 0, .7);
     --dark-text: #9f9f9f;
 }

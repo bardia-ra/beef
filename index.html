@@ -46,14 +46,16 @@
     </header>
     <div class="nav-mobile">
         <li class="nav-mobile-item" id="nav-login-mobile">
-            <i  class=" nav-login fa-regular fa-user" style="color: #ffffff;font-size: 22px;"></i>
+            <i  class=" nav-login fa-regular fa-user" ></i>
         </li>
         <li class="nav-mobile-item" id="nav-cart-mobile">
             <div id="circle"><span id="cart-numb">0</span></div>
-            <i class="nav-cart fa-brands fa-opencart" style="color: #ffffff;font-size: 22px;"></i>
+            <i class="nav-cart fa-brands fa-opencart" ></i>
         </li>
         <li class="nav-mobile-item" id="nav-bag">
-            <i class=" nav-bag fa-solid fa-bag-shopping"></i>
+            <a href="collections/all.html">
+                <i class=" nav-bag fa-solid fa-bag-shopping" style="color: #292828;"></i>
+            </a>
         </li>
         <li class="nav-mobile-item" id="nav-bar">
             <i class=" nav-bar fa-solid fa-bars"></i>
@@ -133,8 +135,8 @@
                 <input type="password" placeholder="رمز عبور خود را وارد کنید" id="password"></div>
             <div class="check-form">
                 <div class="checkbox-wrapper-19">
-                    <input type="checkbox" id="checkbox-time1" />
-                    <label for="checkbox-time1" class="check-box">
+                    <input type="checkbox" id="checkbox-time11" />
+                    <label for="checkbox-time11" class="check-box">
                 </div>
                 <p>قوانین را خوانده ام و ان را می پذیرم</p>
             </div>
@@ -200,27 +202,15 @@
         </div>
     </div>
     <nav>
-        <ul>
-            <li id="nav-login-1">
-                <i  class=" nav-login fa-regular fa-user" style="color: #ffffff;font-size: 22px;"></i>
-            </li>
-            <li id="nav-cart-1">
-                <div id="circle"><span id="cart-numb">0</span></div>
-                <i class="nav-cart fa-brands fa-opencart" style="color: #ffffff;font-size: 22px;"></i>
-            </li>
-        </ul>
-        <ul>
-            <h1 class="nav-logo">فروشگاه پروتینی</h1>
-        </ul>
         <ul class="nav-item-parent">
             <li>
-                <span class="nav-item-border">
+                <span class="nav-item-border" id="home-nav">
                     <a href="" class="nav-item">خانه</a>
                 </span>
             </li>
             <li>
                 <span class="nav-item-border" id="product-nav">
-                    <a href="" class="nav-item" >محصولات</a>
+                    <a href="collections/all.html" class="nav-item" >محصولات</a>
                 </span>
             </li>
             <li>
@@ -234,6 +224,20 @@
                 </span>
             </li>
         </ul>
+        <ul>
+            <h1 class="nav-logo">فروشگاه پروتینی</h1>
+        </ul>
+        <ul>
+            <li id="nav-cart-1">
+                <div id="circle"><span id="cart-numb">0</span></div>
+                <i class="nav-cart fa-brands fa-opencart" style="font-size: 22px;"></i>
+            </li>
+            <li id="nav-login-1">
+                <i  class=" nav-login fa-regular fa-user" style="font-size: 22px;"></i>
+            </li>
+            
+        </ul>
+        
     </nav>
     <main>
         <section class="sect-top">
@@ -243,7 +247,10 @@
                 <p>بدون آنتی بیوتیک</p>
                 <p>بدون هورمون</p>
             </div>
-            <button type="button" id="prod-btn">مشاهده محصولات</button>
+            <a href="collections/all.html">
+                <button type="button" id="prod-btn">مشاهده محصولات</button>
+            </a>
+            
         </section>
         <section class="category-parent">
             <div class="category-card">
